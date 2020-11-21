@@ -598,6 +598,7 @@ export const render = (style, width = 1024, height = 1024, options) =>
                             channels: 4,
                         },
                     })
+                        .limitInputPixels(false)
                         .png()
                         .toBuffer()
                         .then(resolve)
